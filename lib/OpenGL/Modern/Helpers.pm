@@ -31,6 +31,9 @@ use OpenGL::Modern qw(
   glBufferData_c
   glUniform2f
   glUniform4f
+  glGetActiveUniform_c
+  glShaderSource_p
+  glGetUniformLocation_c
 );
 
 =head1 NAME
@@ -160,7 +163,6 @@ $VERSION = '0.01_02';
   glGenTextures_p
   glGetProgramiv_p
   glGetShaderiv_p
-  glShaderSource_p
   glGenFramebuffers_p
   glGenVertexArrays_p
   glGenBuffers_p
@@ -168,6 +170,17 @@ $VERSION = '0.01_02';
   glBufferData_p
   glUniform2f_p
   glUniform4f_p
+ 
+  glGetShaderInfoLog
+  glGetProgramInfoLog
+  glShaderSource
+  glGetShaderiv
+  glGetProgramiv
+  glGetActiveUniform
+  glGetUniformLocation
+  glProgramUniform4fv
+  glProgramUniform
+  croak_on_gl_error
 );
 
 %glErrorStrings = (
@@ -182,6 +195,7 @@ $VERSION = '0.01_02';
 );
 
 our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
+our $LONG_SIZE = $Config{longsize};
 
 sub pack_GLuint {
     my @gluints = @_;
@@ -296,14 +310,6 @@ sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }
 
 sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }
 
-sub glShaderSource_p {
-    my ( $shader, @sources ) = @_;
-    my $count = @sources;
-    my @lengths = map length, @sources;
-    glShaderSource_c( $shader, $count, pack( 'P*', @sources ), pack( 'I*', @lengths ) );
-    return;
-}
-
 sub glGetIntegerv_p {
     my ( $pname, $count ) = @_;
     $count ||= 1;
@@ -326,6 +332,46 @@ sub glUniform2f_p {
 sub glUniform4f_p {
     my ( $uniform, $v0, $v1, $v2, $v3 ) = @_;
     glUniform4f $uniform, $v0, $v1, $v2, $v3;
+}
+
+*glGetShaderInfoLog         = \&glGetShaderInfoLog_p;
+*glGetProgramInfoLog        = \&glGetProgramInfoLog_p;
+*glGetShaderiv              = \&glGetShaderiv_p;
+*glGetProgramiv             = \&glGetProgramiv_p;
+
+sub glShaderSource       { goto &glShaderSource_p }
+sub glGetUniformLocation { goto &glGetUniformLocation_c }
+
+sub glGetActiveUniform
+{
+    my ( $program, $index, $bufsize) = @_;
+    $bufsize ||= 256;
+
+    xs_buffer( my $length, $LONG_SIZE );
+    xs_buffer( my $size,   $LONG_SIZE );
+    xs_buffer( my $type,   $LONG_SIZE );
+    xs_buffer( my $name,   $bufsize);
+    
+    glGetActiveUniform_c( $program, $index, $bufsize, iv_ptr($length), iv_ptr($size), iv_ptr($type), $name);
+    $_ = unpack 'I', $_ for $length, $size, $type;
+    $name  = substr $name, 0, $length;
+    return wantarray ? ($length, $size, $type, $name) : $name;
+}
+
+sub glProgramUniform
+{
+    my ( $signature, $program, $index, @v ) = @_;
+
+    my $buf;
+    if ( $signature =~ /^(\d+)fv/) {
+        my $n = $1;
+        $buf = pack_GLfloat(@v);
+        @v = ( scalar(@v) / $n, iv_ptr($buf) );
+        $signature .= '_c';
+    }
+    no strict 'refs';
+    my $method = 'OpenGL::Modern::glProgramUniform' . $signature;
+    $method->($program, $index, @v);
 }
 
 1;
