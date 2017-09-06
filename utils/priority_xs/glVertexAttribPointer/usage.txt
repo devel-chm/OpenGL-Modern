@@ -1,0 +1,20 @@
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,1,0,GLint,size,N/A,in,fixed,"1,2,3,or 4"
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,3,0,GLboolean,normalized,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,4,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,5,1,"const void *",pointer,N/A,in,fixed,"Actually this is an offset to first value"
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,1,0,GLint,size,N/A,in,fixed,"1,2,3 or 4"
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,3,0,GLboolean,normalized,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,4,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,5,1,"const void *",pointer,N/A,in,variable,"Actually this is an offset to first value"
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,1,0,GLint,size,N/A,in,fixed,"1,2,3 or 4"
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,3,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,4,1,"const void *",pointer,N/A,in,variable,"Actually this is an offset to first value"

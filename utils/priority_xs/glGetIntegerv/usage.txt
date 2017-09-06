@@ -1,0 +1,3 @@
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,0,0,GLenum,pname,N/A,in,fixed,"determines count and type of params returned"
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,1,1,"GLint *",params,"1,2,4,GL_NUM_COMPRESSED_TEXTURE_FORMATS,GL_NUM_PROGRAM_BINARY_FORMATS",out,variable,"Depends on pname input, use hash to lookup"

@@ -1,0 +1,10 @@
+GL_VERSION_1_5.0001.csv,        glBufferData,   -1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv,        glBufferData,    0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv,        glBufferData,    1,0,GLsizeiptr,size,N/A,in,fixed,"number of bytes in data"
+GL_VERSION_1_5.0001.csv,        glBufferData,    2,1,"const void *",data,arg1(size),in,variable,"either pointer to size bytes of data or NULL (should we implement NULL or use 0?)"
+GL_VERSION_1_5.0001.csv,        glBufferData,    3,0,GLenum,usage,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 0,0,GLenum,target,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 1,0,GLsizeiptrARB,size,N/A,in,fixed,"number of bytes in data"
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 2,1,"const void *",data,arg1(size),in,variable,"either pointer to size bytes of data or NULL (should we implement NULL or use 0?)"
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 3,0,GLenum,usage,N/A,in,fixed,N/A

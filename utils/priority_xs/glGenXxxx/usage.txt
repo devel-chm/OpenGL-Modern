@@ -1,0 +1,69 @@
+GL_AMD_performance_monitor.0001.csv:glGenPerfMonitorsAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_AMD_performance_monitor.0001.csv:glGenPerfMonitorsAMD,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_AMD_performance_monitor.0001.csv:glGenPerfMonitorsAMD,1,1,"GLuint *",monitors,"arg0(n)",out,variable,NA
+GL_ANGLE_timer_query.csv:glGenQueriesANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ANGLE_timer_query.csv:glGenQueriesANGLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ANGLE_timer_query.csv:glGenQueriesANGLE,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_APPLE_fence.csv:glGenFencesAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_APPLE_fence.csv:glGenFencesAPPLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_APPLE_fence.csv:glGenFencesAPPLE,1,1,"GLuint *",fences,"arg0(n)",out,variable,NA
+GL_APPLE_vertex_array_object.csv:glGenVertexArraysAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_APPLE_vertex_array_object.csv:glGenVertexArraysAPPLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_APPLE_vertex_array_object.csv:glGenVertexArraysAPPLE,1,1,"const GLuint *",arrays,"arg0(n)",out,variable,NA
+GL_ARB_framebuffer_object.csv:glGenFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_framebuffer_object.csv:glGenFramebuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_framebuffer_object.csv:glGenFramebuffers,1,1,"GLuint *",framebuffers,"arg0(n)",out,variable,NA
+GL_ARB_framebuffer_object.csv:glGenRenderbuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_framebuffer_object.csv:glGenRenderbuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_framebuffer_object.csv:glGenRenderbuffers,1,1,"GLuint *",renderbuffers,"arg0(n)",out,variable,NA
+GL_ARB_occlusion_query.csv:glGenQueriesARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_occlusion_query.csv:glGenQueriesARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_occlusion_query.csv:glGenQueriesARB,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_ARB_sampler_objects.csv:glGenSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_sampler_objects.csv:glGenSamplers,0,0,GLsizei,count,N/A,in,fixed,N/A
+GL_ARB_sampler_objects.csv:glGenSamplers,1,1,"GLuint *",samplers,"arg0(count)",out,variable,NA
+GL_ARB_separate_shader_objects.0001.csv:glGenProgramPipelines,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv:glGenProgramPipelines,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv:glGenProgramPipelines,1,1,"GLuint *",pipelines,"arg0(n)",out,variable,NA
+GL_ARB_transform_feedback2.csv:glGenTransformFeedbacks,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_transform_feedback2.csv:glGenTransformFeedbacks,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_transform_feedback2.csv:glGenTransformFeedbacks,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_ARB_vertex_array_object.csv:glGenVertexArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_array_object.csv:glGenVertexArrays,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_array_object.csv:glGenVertexArrays,1,1,"GLuint *",arrays,"arg0(n)",out,variable,NA
+GL_ARB_vertex_buffer_object.csv:glGenBuffersARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_buffer_object.csv:glGenBuffersARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv:glGenBuffersARB,1,1,"GLuint *",buffers,"arg0(n)",out,variable,NA
+GL_ARB_vertex_program.0001.csv:glGenProgramsARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0001.csv:glGenProgramsARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0001.csv:glGenProgramsARB,1,1,"GLuint *",programs,"arg0(n)",out,variable,NA
+GL_EXT_framebuffer_object.csv:glGenFramebuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_framebuffer_object.csv:glGenFramebuffersEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_framebuffer_object.csv:glGenFramebuffersEXT,1,1,"GLuint *",framebuffers,"arg0(n)",out,variable,NA
+GL_EXT_framebuffer_object.csv:glGenRenderbuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_framebuffer_object.csv:glGenRenderbuffersEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_framebuffer_object.csv:glGenRenderbuffersEXT,1,1,"GLuint *",renderbuffers,"arg0(n)",out,variable,NA
+GL_EXT_texture_object.csv:glGenTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_texture_object.csv:glGenTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_texture_object.csv:glGenTexturesEXT,1,1,"GLuint *",textures,"arg0(n)",out,variable,NA
+GL_NV_fence.csv:glGenFencesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_fence.csv:glGenFencesNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_fence.csv:glGenFencesNV,1,1,"GLuint *",fences,"arg0(n)",out,variable,NA
+GL_NV_occlusion_query.csv:glGenOcclusionQueriesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_occlusion_query.csv:glGenOcclusionQueriesNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_occlusion_query.csv:glGenOcclusionQueriesNV,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_NV_transform_feedback2.csv:glGenTransformFeedbacksNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_transform_feedback2.csv:glGenTransformFeedbacksNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_transform_feedback2.csv:glGenTransformFeedbacksNV,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_NV_vertex_program.0001.csv:glGenProgramsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0001.csv:glGenProgramsNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_vertex_program.0001.csv:glGenProgramsNV,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA
+GL_VERSION_1_1.0004.csv:glGenTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0004.csv:glGenTextures,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_1.0004.csv:glGenTextures,1,1,"GLuint *",textures,"arg0(n)",out,variable,NA
+GL_VERSION_1_5.0001.csv:glGenBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv:glGenBuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv:glGenBuffers,1,1,"GLuint *",buffers,"arg0(n)",out,variable,NA
+GL_VERSION_1_5.0001.csv:glGenQueries,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv:glGenQueries,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv:glGenQueries,1,1,"GLuint *",ids,"arg0(n)",out,variable,NA

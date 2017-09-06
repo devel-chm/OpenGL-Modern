@@ -1,0 +1,672 @@
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_5.0001.csv,        glBufferData,    0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv,        glBufferData,    1,0,GLsizeiptr,size,N/A,in,fixed,"number of bytes in data"
+GL_VERSION_1_5.0001.csv,        glBufferData,    2,1,"const void *",data,arg1(size),in,variable,"either pointer to size bytes of data or NULL (should we implement NULL or use 0?)"
+GL_VERSION_1_5.0001.csv,        glBufferData,    3,0,GLenum,usage,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv,        glBufferData,   -1,0,void,N/A,N/A,out,fixed,N/A
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 0,0,GLenum,target,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 1,0,GLsizeiptrARB,size,N/A,in,fixed,"number of bytes in data"
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 2,1,"const void *",data,arg1(size),in,variable,"either pointer to size bytes of data or NULL (should we implement NULL or use 0?)"
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB, 3,0,GLenum,usage,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glBufferDataARB,-1,0,void,N/A,N/A,out,fixed,N/A
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0003.csv,        glDrawPixels,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,0,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,1,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,2,0,GLenum,format,N/A,in,fixed,"determines pixel data size/type"
+GL_VERSION_1_1.0003.csv,        glDrawPixels,3,0,GLenum,type,N/A,in,fixed,"determines pixel data size/type"
+GL_VERSION_1_1.0003.csv,        glDrawPixels,4,1,"const void *",pixels,N/A,in,variable,"size and type of pixels data is a complicated function of format and type"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_5.0001.csv,        glGenBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv,        glGenBuffers,0,0,GLsizei,n,N/A,in,fixed,"number of buffers requested"
+GL_VERSION_1_5.0001.csv,        glGenBuffers,1,1,"GLuint *",buffers,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_buffer_object.csv,glGenBuffersARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_buffer_object.csv,glGenBuffersARB,0,0,GLsizei,n,N/A,in,fixed,"number of buffers requested"
+GL_ARB_vertex_buffer_object.csv,glGenBuffersARB,1,1,"GLuint *",buffers,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_framebuffer_object.csv,  glGenFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_framebuffer_object.csv,  glGenFramebuffers,0,0,GLsizei,n,N/A,in,fixed,"number of framebuffers requested"
+GL_ARB_framebuffer_object.csv,  glGenFramebuffers,1,1,"GLuint *",framebuffers,arg0(n),out,fixed,???
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_framebuffer_object.csv,  glGenFramebuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_framebuffer_object.csv,  glGenFramebuffersEXT,0,0,GLsizei,n,N/A,in,fixed,"number of framebuffers requested"
+GL_EXT_framebuffer_object.csv,  glGenFramebuffersEXT,1,1,"GLuint *",framebuffers,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0004.csv,        glGenTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0004.csv,        glGenTextures,0,0,GLsizei,n,N/A,in,fixed,"number of textures requested"
+GL_VERSION_1_1.0004.csv,        glGenTextures,1,1,"GLuint *",textures,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_texture_object.csv,      glGenTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_texture_object.csv,      glGenTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,"number of textures requested"
+GL_EXT_texture_object.csv,      glGenTexturesEXT,1,1,"GLuint *",textures,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_array_object.csv, glGenVertexArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_array_object.csv, glGenVertexArrays,0,0,GLsizei,n,N/A,in,fixed,"number of vertexarrays requested"
+GL_ARB_vertex_array_object.csv, glGenVertexArrays,1,1,"GLuint *",arrays,arg0(n),out,fixed,"pointer to buffer for n values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,1,0,GLuint,index,N/A,in,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,2,0,GLsizei,maxLength,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_ACTIVE_UNIFORM_MAX_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,3,1,"GLsizei *",length,N/A,out,fixed,"string length of arg6(name) not including NULL"
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,4,1,"GLint *",size,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,5,1,"GLenum *",type,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,6,1,"GLchar *",name,arg2(maxLength),out,variable,"name is a NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,0,0,GLhandleARB,programObj,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,1,0,GLuint,index,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,2,0,GLsizei,maxLength,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_ACTIVE_UNIFORM_MAX_LENGTH,GLint *params) to determine"
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,3,1,"GLsizei *",length,N/A,out,fixed,"string length of arg6(name) not including NULL"
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,4,1,"GLint *",size,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,5,1,"GLenum *",type,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,6,1,"GLcharARB *",name,arg2(maxLength),out,variable,"name is a NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,1,1,"const GLchar *",name,N/A,in,N/A,"Null terminated string so size info not needed to call"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,N/A
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,1,1,"const GLcharARB *",name,N/A,in,N/A,"Null terminated string so size info not needed to call"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,0,0,GLenum,pname,N/A,in,fixed,"determines count and type of params returned"
+GL_VERSION_1_1.0004.csv,        glGetIntegerv,1,1,"GLint *",params,"1,2,4,GL_NUM_COMPRESSED_TEXTURE_FORMATS,GL_NUM_PROGRAM_BINARY_FORMATS",out,variable,"Depends on pname input, use hash to lookup"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_INFO_LOG_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,2,1,"GLsizei *",length,N/A,inout,fixed,"string length of arg3(infoLog) not including NULL"
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,3,1,"GLchar *",infoLog,arg1(bufSize),out,variable,"infoLog is returned as NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,2,1,"GLint *",param,"1,3",out,variable,"Count determined by arg1(pname)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,2,1,"GLint *",params,"1,3",out,variable,"Count determined by arg1(pname)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,0,0,GLuint,id,N/A,in,fixed,N/A
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,2,1,"GLint *",params,"1,3",out,variable,"Count determined by arg1(pname)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,"glGetShaderiv(GLuint shader,GL_INFO_LOG_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,2,1,"GLsizei *",length,N/A,inout,fixed,"string length of arg3(infoLog) not including NULL"
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,3,1,"GLchar *",infoLog,arg1(bufSize),out,variable,"infoLog is returned as NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,2,1,"GLint *",param,1,out,fixed,N/A
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0002.csv,        glGetUniformLocation,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetUniformLocation,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetUniformLocation,1,1,"const GLchar *",name,N/A,in,variable,"name is a NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_shader_objects.0002.csv, glGetUniformLocationARB,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0002.csv, glGetUniformLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0002.csv, glGetUniformLocationARB,1,1,"const GLcharARB *",name,N/A,in,variable,"name is a NULL terminated string"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_KHR_debug.0002.csv,          glObjectLabel,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,0,0,GLenum,identifier,N/A,in,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,1,0,GLuint,name,N/A,in,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,2,0,GLsizei,length,N/A,in,fixed,"number of chars in label, negative value mean NULL terminated, NULL input clears any debug label"
+GL_KHR_debug.0002.csv,          glObjectLabel,3,1,"const GLchar *",label,"arg2(length) determines",in,variable,"use label=NULL and null terminated string input"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0010.csv,glReadPixels,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0010.csv,glReadPixels,0,0,GLint,x,N/A,in,fixed,N/A
+GL_VERSION_1_1.0010.csv,glReadPixels,1,0,GLint,y,N/A,in,fixed,N/A
+GL_VERSION_1_1.0010.csv,glReadPixels,2,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0010.csv,glReadPixels,3,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_1.0010.csv,glReadPixels,4,0,GLenum,format,N/A,in,fixed,"specifies format of the pixel data"
+GL_VERSION_1_1.0010.csv,glReadPixels,5,0,GLenum,type,N/A,in,fixed,"specifies data type of the pixel data"
+GL_VERSION_1_1.0010.csv,glReadPixels,6,1,"void *",pixels,N/A,out,variable,"size of data returned is width*height*FUNCTION(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0003.csv,glShaderSource,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0003.csv,glShaderSource,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0003.csv,glShaderSource,1,0,GLsizei,count,N/A,in,fixed,"calculate from scalar(@string)"
+GL_VERSION_2_0.0003.csv,glShaderSource,2,2,"const GLchar * const *",string,N/A,in,variable,"type map from @string to GLchar **string"
+GL_VERSION_2_0.0003.csv,glShaderSource,3,1,"const GLint *",length,N/A,in,variable,"use NULL to indicate use of NULL terminated strings in data"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,0,0,GLhandleARB,shaderObj,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,1,0,GLsizei,count,N/A,in,fixed,"calculate from scalar(@string)"
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,2,2,"const GLcharARB * *",string,N/A,in,variable,"type map from @string to GLcharARB **string"
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,3,1,"const GLint *",length,N/A,in,variable,"use NULL to indicate use of NULL terminated strings in data"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0013.csv,glTexGendv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,2,1,"const GLdouble *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"
+GL_VERSION_1_1.0013.csv,glTexGenfv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,2,1,"const GLfloat *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"
+GL_VERSION_1_1.0013.csv,glTexGeniv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,2,1,"const GLint *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0013.csv,glTexImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,0,0,GLenum,target,N/A,in,fixed,"GL_TEXTURE_1D or GL_PROXY_TEXTURE_1D"
+GL_VERSION_1_1.0013.csv,glTexImage1D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,2,0,GLint,internalformat,N/A,in,fixed,"number of color components in texture"
+GL_VERSION_1_1.0013.csv,glTexImage1D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,4,0,GLint,border,N/A,in,fixed,"this must be 0"
+GL_VERSION_1_1.0013.csv,glTexImage1D,5,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_1.0013.csv,glTexImage1D,6,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_1.0013.csv,glTexImage1D,7,1,"const void *",pixels,N/A,in,variable,"pointer to texture image in memory size depends on args"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0013.csv,glTexImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,2,0,GLint,internalformat,N/A,in,fixed,"number of color components in texture"
+GL_VERSION_1_1.0013.csv,glTexImage2D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,4,0,GLsizei,height,N/A,in,fixed,"height of texture image or number of layers in a texture array"
+GL_VERSION_1_1.0013.csv,glTexImage2D,5,0,GLint,border,N/A,in,fixed,"must be 0"
+GL_VERSION_1_1.0013.csv,glTexImage2D,6,0,GLenum,format,N/A,in,fixed,"format of the pixel data"
+GL_VERSION_1_1.0013.csv,glTexImage2D,7,0,GLenum,type,N/A,in,fixed,"data type of the pixel data"
+GL_VERSION_1_1.0013.csv,glTexImage2D,8,1,"const void *",pixels,N/A,in,variable,"pointer to image data in memory"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_2.csv,glTexImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,2,0,GLint,internalFormat,N/A,in,fixed,"number of color components in the texture"
+GL_VERSION_1_2.csv,glTexImage3D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,4,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,5,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,6,0,GLint,border,N/A,in,fixed,"must be zero"
+GL_VERSION_1_2.csv,glTexImage3D,7,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_2.csv,glTexImage3D,8,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_2.csv,glTexImage3D,9,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_texture3D.csv,glTexImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,2,0,GLenum,internalformat,N/A,in,fixed,"number of color components in the texture"
+GL_EXT_texture3D.csv,glTexImage3DEXT,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,4,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,5,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,6,0,GLint,border,N/A,in,fixed,"must be zero"
+GL_EXT_texture3D.csv,glTexImage3DEXT,7,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_texture3D.csv,glTexImage3DEXT,8,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_texture3D.csv,glTexImage3DEXT,9,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,4,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,5,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,6,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,7,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,8,1,"const void *",pixels,N/A,in,variable,"w*h*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,4,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,5,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,6,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,7,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,8,1,"const void *",pixels,N/A,in,variable,"w*h*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_1_2.csv,glTexSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,5,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,6,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,8,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_2.csv,glTexSubImage3D,9,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_2.csv,glTexSubImage3D,10,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,4,0,GLint,zoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,5,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,6,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,7,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,8,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,9,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,10,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,1,0,GLint,size,N/A,in,fixed,"1,2,3,or 4"
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,3,0,GLboolean,normalized,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,4,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_VERSION_2_0.0006.csv,glVertexAttribPointer,5,1,"const void *",pointer,N/A,in,fixed,"Actually this is an offset to first value"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,1,0,GLint,size,N/A,in,fixed,"1,2,3 or 4"
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,3,0,GLboolean,normalized,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,4,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0004.csv,glVertexAttribPointerARB,5,1,"const void *",pointer,N/A,in,variable,"Actually this is an offset to first value"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,0,0,GLuint,index,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,1,0,GLint,size,N/A,in,fixed,"1,2,3 or 4"
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,2,0,GLenum,type,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,3,0,GLsizei,stride,N/A,in,fixed,N/A
+GL_NV_vertex_program.0004.csv,glVertexAttribPointerNV,4,1,"const void *",pointer,N/A,in,variable,"Actually this is an offset to first value"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1i64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1i64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1i64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1i64vARB,3,1,"const GLint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1ui64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1ui64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1ui64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform1ui64vARB,3,1,"const GLuint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2i64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2i64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2i64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2i64vARB,3,1,"const GLint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2ui64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2ui64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2ui64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform2ui64vARB,3,1,"const GLuint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3i64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3i64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3i64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3i64vARB,3,1,"const GLint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3ui64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3ui64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3ui64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform3ui64vARB,3,1,"const GLuint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform4i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform4i64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform4i64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform4i64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0001.csv,glProgramUniform4i64vARB,3,1,"const GLint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_gpu_shader_int64.0002.csv,glProgramUniform4ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_gpu_shader_int64.0002.csv,glProgramUniform4ui64vARB,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0002.csv,glProgramUniform4ui64vARB,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_gpu_shader_int64.0002.csv,glProgramUniform4ui64vARB,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_gpu_shader_int64.0002.csv,glProgramUniform4ui64vARB,3,1,"const GLuint64 *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1dv,3,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1fv,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1iv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1iv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1iv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1iv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1iv,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1uiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1uiv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1uiv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0001.csv,glProgramUniform1uiv,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2dv,3,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2fv,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2iv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2iv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2iv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2iv,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2uiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2uiv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2uiv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform2uiv,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3dv,3,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3fv,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3iv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3iv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3iv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3iv,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3uiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3uiv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3uiv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform3uiv,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4dv,3,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4fv,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4iv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4iv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4iv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4iv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0002.csv,glProgramUniform4iv,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniform4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniform4uiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniform4uiv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniform4uiv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniform4uiv,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x3fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix2x4fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0003.csv,glProgramUniformMatrix3x2fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix3x4fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x2fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3dv,4,1,"const GLdouble *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,1,0,GLint,location,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0004.csv,glProgramUniformMatrix4x3fv,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1fvEXT,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1ivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1ivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1ivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0009.csv,glProgramUniform1ivEXT,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_direct_state_access.0010.csv,glProgramUniform1uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform1uivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform1uivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform1uivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform1uivEXT,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2fvEXT,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2ivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2ivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2ivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2ivEXT,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2uivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2uivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2uivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform2uivEXT,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3fvEXT,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3ivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3ivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3ivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3ivEXT,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3uivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3uivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3uivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform3uivEXT,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4fvEXT,3,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4ivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4ivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4ivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4ivEXT,3,1,"const GLint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4uivEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4uivEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4uivEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniform4uivEXT,3,1,"const GLuint *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0010.csv,glProgramUniformMatrix2fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x3fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix2x4fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x2fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix3x4fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x2fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,1,0,GLint,location,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,N/A
+GL_EXT_direct_state_access.0011.csv,glProgramUniformMatrix4x3fvEXT,4,1,"const GLfloat *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1i64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1i64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1i64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1i64vNV,3,1,"const GLint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1ui64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1ui64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1ui64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform1ui64vNV,3,1,"const GLuint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2i64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2i64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2i64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2i64vNV,3,1,"const GLint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2ui64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2ui64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2ui64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform2ui64vNV,3,1,"const GLuint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3i64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3i64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3i64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3i64vNV,3,1,"const GLint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3ui64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3ui64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3ui64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform3ui64vNV,3,1,"const GLuint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4i64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4i64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4i64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4i64vNV,3,1,"const GLint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4ui64vNV,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4ui64vNV,1,0,GLint,location,N/A,in,fixed,N/A
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4ui64vNV,2,0,GLsizei,count,N/A,in,fixed,"number of array elements to replace"
+GL_NV_gpu_shader5.0001.csv,glProgramUniform4ui64vNV,3,1,"const GLuint64EXT *",value,N/A,in,variable,"Data size is size of GLSL type * count"
++------------------------------------------------------------------------------------------------------------------------------------------------------+

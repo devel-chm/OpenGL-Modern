@@ -1,0 +1,12 @@
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_VERSION_2_0.0002.csv,        glGetProgramiv,2,1,"GLint *",param,"1,3",out,variable,"Count determined by arg1(pname)"
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_ARB_vertex_program.0001.csv, glGetProgramivARB,2,1,"GLint *",params,"1,3",out,variable,"Count determined by arg1(pname)"
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,0,0,GLuint,id,N/A,in,fixed,N/A
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,1,0,GLenum,pname,N/A,in,fixed,"returns 1 value except for GL_WORK_GROUP_SIZE which has 3 return values"
+GL_NV_vertex_program.0001.csv,  glGetProgramivNV,2,1,"GLint *",params,"1,3",out,variable,"Count determined by arg1(pname)"

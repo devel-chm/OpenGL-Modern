@@ -1,0 +1,12 @@
+GL_VERSION_1_1.0013.csv,glTexGendv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGendv,2,1,"const GLdouble *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"
+GL_VERSION_1_1.0013.csv,glTexGenfv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGenfv,2,1,"const GLfloat *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"
+GL_VERSION_1_1.0013.csv,glTexGeniv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,0,0,GLenum,coord,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexGeniv,2,1,"const GLint *",params,"1,4",in,variable,"1 value if arg1(pname)==GL_TEXTURE_GEN_MODE, otherwise 4 values"

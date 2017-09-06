@@ -1,0 +1,25 @@
+* This file contains working notes from XS code generation
+
+* utils/priority_xs/ Directory contents:
+
+  NOTES.txt - this file
+  glDeleteXxxx/ - directory with XS work for glDelete routines
+  glGenXxxx/ - directory with XS work for glGen routines
+  required-bad-csv.txt - annotations for priority "bad" routines with pointers
+
+* glDelete* and glGen* routines have the same calling convention save
+  that the glDelete takes a pointer to n object ids to be deleted while
+  glGen* routines  take a pointer argument to a buffer large enough to
+  receive n generated object ids.
+
+* glUniform[1234]{f,i,ui}v(location,count,<type*>value) is used to set
+  a single uniform value or array of uniform values.  The uniform value
+  is either a single float, int, or uint (for the 1 versions) or the
+  vec[234] versions.  The value array needs to include [1234] times
+  count elements of type <type> to load into the uniform variable.
+  Extensions add support for int64, uint64, and doubles to this.
+
+* glUniformMatrix{2,3,4,2x3,3x2,2x4,4x2,3x4,4x3}{f}v(location,count,<type*>value)
+  behaves similarly but the number of elements is a multiple of the number of
+  elements in the base matrix (e.g., 4==4x4==16,...) multiplied by count.
+  Extensions add support for doubles to this.

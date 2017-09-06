@@ -1,0 +1,6 @@
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetAttribLocation,1,1,"const GLchar *",name,N/A,in,N/A,"Null terminated string so size info not needed to call"
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,-1,0,GLint,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,N/A
+GL_ARB_vertex_shader.csv,       glGetAttribLocationARB,1,1,"const GLcharARB *",name,N/A,in,N/A,"Null terminated string so size info not needed to call"

@@ -1,0 +1,6 @@
+GL_VERSION_1_1.0003.csv,        glDrawPixels,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,0,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,1,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_1.0003.csv,        glDrawPixels,2,0,GLenum,format,N/A,in,fixed,"determines pixel data size/type"
+GL_VERSION_1_1.0003.csv,        glDrawPixels,3,0,GLenum,type,N/A,in,fixed,"determines pixel data size/type"
+GL_VERSION_1_1.0003.csv,        glDrawPixels,4,1,"const void *",pixels,N/A,in,variable,"size and type of pixels data is a complicated function of format and type"

@@ -40,7 +40,7 @@ GLEW include file declarations in glew.h.
 * Categorize OpenGL bindings as "good" or "bad" according to whether
   or not they have pointer arguments.
 
-  - The good routines
+  - The good routines (DONE)
     - translate cleanly to XS with default typemaps
     - won't require a separate _p perlish version
     - There are 1265 good routines that translate directly (yay!)
@@ -62,19 +62,41 @@ GLEW include file declarations in glew.h.
     -    2 routines with 6 ptrs
     -    1 routines with 7 ptrs
 
-  - Still needs to be detemined the best typemap for pointers
+  - Propose using T_PTRREF or T_PTROBJ for pointers at perl level
     - T_PTR is simple but could lead to SEGFAULT with bad values
-    - Opaque pointers might be better
-    - If the perl value corresponding to the pointer argument is
-      some type of reference (blessed or unblessed) we can use
-      that information to implement simply.  For example, a
-      single argument could be:
-      - an array ref, [ ]
-      - a hash ref, { }
-      - a scalar ref, \$
-      - a blessed object: PDL, Cpointer, OGA, ...
+    - T_PTRREF/OBJ protect pointer value from accidental corruption
+    - Using a reference/object makes for simple typemaps
+      - Just use ref to identify and then use 
+      - Can be done from Perl or C/XS
+      - Some examples:
+        - an array ref, [ ]
+        - a hash ref, { }
+        - a scalar ref, \$
+        - a blessed object: PDL, Cpointer, OGA, ...
 
 * Consider writing generate-XS.pl as a modulino so that it could be
   used as either a command or a module to load and use.
 
+* Propose use of roles to generalize implementation
+  - Basic role provides placeholders for needed functionality
+  - Use around method modifiers to provide actual function
+  - Should be able to "compile" the around routine make fast
+    - could be memoized at the perl level
+    - could be done from the C/XS level
+  - First implementation will focus on functionality
+  - Optimized routines to come or use specific _c routine
 
+* Plan of implementation for routines with pointer/array args:
+  - Basic implementation uses a ref-able type at the perl level
+    - objects: OpenGL::Array or PDL or TBD
+    - native refs: ARRAY, SCALAR, HASH where appropriate
+    - if appropriate, allow ARRAY to be @array if unambiguous
+    - baseline implementation assumes allocation before GL call
+      - consistent with OpenGL C API
+      - C documentation aligns with perl implementations
+      - there is a question of implementation for buffer mapping operations
+      - could add allocation but need to clarify what is needed to do
+    - How should input and output types be constrained?
+      - All the same
+      - Mix and match
+      - Other

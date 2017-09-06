@@ -1,0 +1,10 @@
+GL_VERSION_2_0.0003.csv,glShaderSource,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0003.csv,glShaderSource,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0003.csv,glShaderSource,1,0,GLsizei,count,N/A,in,fixed,"calculate from scalar(@string)"
+GL_VERSION_2_0.0003.csv,glShaderSource,2,2,"const GLchar * const *",string,N/A,in,variable,"type map from @string to GLchar **string"
+GL_VERSION_2_0.0003.csv,glShaderSource,3,1,"const GLint *",length,N/A,in,variable,"use NULL to indicate use of NULL terminated strings in data"
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,0,0,GLhandleARB,shaderObj,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,1,0,GLsizei,count,N/A,in,fixed,"calculate from scalar(@string)"
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,2,2,"const GLcharARB * *",string,N/A,in,variable,"type map from @string to GLcharARB **string"
+GL_ARB_shader_objects.0002.csv,glShaderSourceARB,3,1,"const GLint *",length,N/A,in,variable,"use NULL to indicate use of NULL terminated strings in data"

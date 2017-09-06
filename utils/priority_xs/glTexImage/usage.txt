@@ -1,0 +1,85 @@
+GL_VERSION_1_1.0013.csv,glTexImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,0,0,GLenum,target,N/A,in,fixed,"GL_TEXTURE_1D or GL_PROXY_TEXTURE_1D"
+GL_VERSION_1_1.0013.csv,glTexImage1D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,2,0,GLint,internalformat,N/A,in,fixed,"number of color components in texture"
+GL_VERSION_1_1.0013.csv,glTexImage1D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage1D,4,0,GLint,border,N/A,in,fixed,"this must be 0"
+GL_VERSION_1_1.0013.csv,glTexImage1D,5,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_1.0013.csv,glTexImage1D,6,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_1.0013.csv,glTexImage1D,7,1,"const void *",pixels,N/A,in,variable,"pointer to texture image in memory size depends on args"
+GL_VERSION_1_1.0013.csv,glTexImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,2,0,GLint,internalformat,N/A,in,fixed,"number of color components in texture"
+GL_VERSION_1_1.0013.csv,glTexImage2D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0013.csv,glTexImage2D,4,0,GLsizei,height,N/A,in,fixed,"height of texture image or number of layers in a texture array"
+GL_VERSION_1_1.0013.csv,glTexImage2D,5,0,GLint,border,N/A,in,fixed,"must be 0"
+GL_VERSION_1_1.0013.csv,glTexImage2D,6,0,GLenum,format,N/A,in,fixed,"format of the pixel data"
+GL_VERSION_1_1.0013.csv,glTexImage2D,7,0,GLenum,type,N/A,in,fixed,"data type of the pixel data"
+GL_VERSION_1_1.0013.csv,glTexImage2D,8,1,"const void *",pixels,N/A,in,variable,"pointer to image data in memory"
+GL_VERSION_1_2.csv,glTexImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,2,0,GLint,internalFormat,N/A,in,fixed,"number of color components in the texture"
+GL_VERSION_1_2.csv,glTexImage3D,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,4,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,5,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexImage3D,6,0,GLint,border,N/A,in,fixed,"must be zero"
+GL_VERSION_1_2.csv,glTexImage3D,7,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_2.csv,glTexImage3D,8,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_2.csv,glTexImage3D,9,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
+GL_EXT_texture3D.csv,glTexImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,2,0,GLenum,internalformat,N/A,in,fixed,"number of color components in the texture"
+GL_EXT_texture3D.csv,glTexImage3DEXT,3,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,4,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,5,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_EXT_texture3D.csv,glTexImage3DEXT,6,0,GLint,border,N/A,in,fixed,"must be zero"
+GL_EXT_texture3D.csv,glTexImage3DEXT,7,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_texture3D.csv,glTexImage3DEXT,8,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_texture3D.csv,glTexImage3DEXT,9,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,4,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,5,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,6,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,7,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_1.0014.csv,glTexSubImage2D,8,1,"const void *",pixels,N/A,in,variable,"w*h*FUN(format,type)"
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,4,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,5,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,6,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,7,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_subtexture.csv,glTexSubImage2DEXT,8,1,"const void *",pixels,N/A,in,variable,"w*h*FUN(format,type)"
+GL_VERSION_1_2.csv,glTexSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,1,0,GLint,level,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,5,0,GLsizei,width,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,6,0,GLsizei,height,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_VERSION_1_2.csv,glTexSubImage3D,8,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_VERSION_1_2.csv,glTexSubImage3D,9,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_VERSION_1_2.csv,glTexSubImage3D,10,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,0,0,GLenum,target,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,1,0,GLint,level,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,2,0,GLint,xoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,3,0,GLint,yoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,4,0,GLint,zoffset,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,5,0,GLsizei,width,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,6,0,GLsizei,height,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,7,0,GLsizei,depth,N/A,in,fixed,N/A
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,8,0,GLenum,format,N/A,in,fixed,"pixel data format"
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,9,0,GLenum,type,N/A,in,fixed,"pixel data type"
+GL_EXT_subtexture.csv,glTexSubImage3DEXT,10,1,"const void *",pixels,N/A,in,variable,"w*h*d*FUN(format,type)"

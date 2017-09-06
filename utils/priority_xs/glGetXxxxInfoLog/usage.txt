@@ -1,0 +1,10 @@
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_INFO_LOG_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,2,1,"GLsizei *",length,N/A,inout,fixed,"string length of arg3(infoLog) not including NULL"
+GL_VERSION_2_0.0002.csv,        glGetProgramInfoLog,3,1,"GLchar *",infoLog,arg1(bufSize),out,variable,"infoLog is returned as NULL terminated string"
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,"glGetShaderiv(GLuint shader,GL_INFO_LOG_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,2,1,"GLsizei *",length,N/A,inout,fixed,"string length of arg3(infoLog) not including NULL"
+GL_VERSION_2_0.0002.csv,        glGetShaderInfoLog,3,1,"GLchar *",infoLog,arg1(bufSize),out,variable,"infoLog is returned as NULL terminated string"

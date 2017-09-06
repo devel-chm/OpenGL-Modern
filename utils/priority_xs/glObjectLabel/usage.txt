@@ -1,0 +1,5 @@
+GL_KHR_debug.0002.csv,          glObjectLabel,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,0,0,GLenum,identifier,N/A,in,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,1,0,GLuint,name,N/A,in,fixed,N/A
+GL_KHR_debug.0002.csv,          glObjectLabel,2,0,GLsizei,length,N/A,in,fixed,"number of chars in label, negative value mean NULL terminated, NULL input clears any debug label"
+GL_KHR_debug.0002.csv,          glObjectLabel,3,1,"const GLchar *",label,"arg2(length) determines",in,variable,"use label=NULL and null terminated string input"

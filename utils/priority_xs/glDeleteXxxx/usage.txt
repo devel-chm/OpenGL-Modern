@@ -1,0 +1,78 @@
+GL_AMD_performance_monitor.0001.csv:glDeletePerfMonitorsAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_AMD_performance_monitor.0001.csv:glDeletePerfMonitorsAMD,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_AMD_performance_monitor.0001.csv:glDeletePerfMonitorsAMD,1,1,"GLuint *",monitors,"arg0(n)",in,variable,NA
+GL_ANGLE_timer_query.csv:glDeleteQueriesANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ANGLE_timer_query.csv:glDeleteQueriesANGLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ANGLE_timer_query.csv:glDeleteQueriesANGLE,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_APPLE_fence.csv:glDeleteFencesAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_APPLE_fence.csv:glDeleteFencesAPPLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_APPLE_fence.csv:glDeleteFencesAPPLE,1,1,"const GLuint *",fences,"arg0(n)",in,variable,NA
+GL_APPLE_vertex_array_object.csv:glDeleteVertexArraysAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_APPLE_vertex_array_object.csv:glDeleteVertexArraysAPPLE,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_APPLE_vertex_array_object.csv:glDeleteVertexArraysAPPLE,1,1,"const GLuint *",arrays,"arg0(n)",in,variable,NA
+GL_ARB_framebuffer_object.csv:glDeleteFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_framebuffer_object.csv:glDeleteFramebuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_framebuffer_object.csv:glDeleteFramebuffers,1,1,"const GLuint *",framebuffers,"arg0(n)",in,variable,NA
+GL_ARB_framebuffer_object.csv:glDeleteRenderbuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_framebuffer_object.csv:glDeleteRenderbuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_framebuffer_object.csv:glDeleteRenderbuffers,1,1,"const GLuint *",renderbuffers,"arg0(n)",in,variable,NA
+GL_ARB_occlusion_query.csv:glDeleteQueriesARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_occlusion_query.csv:glDeleteQueriesARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_occlusion_query.csv:glDeleteQueriesARB,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_ARB_sampler_objects.csv:glDeleteSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_sampler_objects.csv:glDeleteSamplers,0,0,GLsizei,count,N/A,in,fixed,N/A
+GL_ARB_sampler_objects.csv:glDeleteSamplers,1,1,"const GLuint *",samplers,"arg0(n)",in,variable,NA
+GL_ARB_separate_shader_objects.0001.csv:glDeleteProgramPipelines,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv:glDeleteProgramPipelines,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_separate_shader_objects.0001.csv:glDeleteProgramPipelines,1,1,"const GLuint *",pipelines,"arg0(n)",in,variable,NA
+GL_ARB_shading_language_include.csv:glDeleteNamedStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_shading_language_include.csv:glDeleteNamedStringARB,0,0,GLint,namelen,N/A,in,fixed,N/A
+GL_ARB_shading_language_include.csv:glDeleteNamedStringARB,1,1,"const GLchar *",name,"arg0(namelen)",in,variable,"is NULL terminated if namelen<0"
+GL_ARB_transform_feedback2.csv:glDeleteTransformFeedbacks,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_transform_feedback2.csv:glDeleteTransformFeedbacks,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_transform_feedback2.csv:glDeleteTransformFeedbacks,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_ARB_vertex_array_object.csv:glDeleteVertexArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_array_object.csv:glDeleteVertexArrays,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_array_object.csv:glDeleteVertexArrays,1,1,"const GLuint *",arrays,"arg0(n)",in,variable,NA
+GL_ARB_vertex_buffer_object.csv:glDeleteBuffersARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_buffer_object.csv:glDeleteBuffersARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_buffer_object.csv:glDeleteBuffersARB,1,1,"const GLuint *",buffers,"arg0(n)",in,variable,NA
+GL_ARB_vertex_program.0001.csv:glDeleteProgramsARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_vertex_program.0001.csv:glDeleteProgramsARB,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_ARB_vertex_program.0001.csv:glDeleteProgramsARB,1,1,"const GLuint *",programs,"arg0(n)",in,variable,NA
+GL_EXT_framebuffer_object.csv:glDeleteFramebuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_framebuffer_object.csv:glDeleteFramebuffersEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_framebuffer_object.csv:glDeleteFramebuffersEXT,1,1,"const GLuint *",framebuffers,"arg0(n)",in,variable,NA
+GL_EXT_framebuffer_object.csv:glDeleteRenderbuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_framebuffer_object.csv:glDeleteRenderbuffersEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_framebuffer_object.csv:glDeleteRenderbuffersEXT,1,1,"const GLuint *",renderbuffers,"arg0(n)",in,variable,NA
+GL_EXT_texture_object.csv:glDeleteTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_EXT_texture_object.csv:glDeleteTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_EXT_texture_object.csv:glDeleteTexturesEXT,1,1,"const GLuint *",textures,"arg0(n)",in,variable,NA
+GL_NV_command_list.0001.csv:glDeleteCommandListsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_command_list.0001.csv:glDeleteCommandListsNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_command_list.0001.csv:glDeleteCommandListsNV,1,1,"const GLuint *",lists,"arg0(n)",in,variable,NA
+GL_NV_command_list.0001.csv:glDeleteStatesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_command_list.0001.csv:glDeleteStatesNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_command_list.0001.csv:glDeleteStatesNV,1,1,"const GLuint *",states,"arg0(n)",in,variable,NA
+GL_NV_fence.csv:glDeleteFencesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_fence.csv:glDeleteFencesNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_fence.csv:glDeleteFencesNV,1,1,"const GLuint *",fences,"arg0(n)",in,variable,NA
+GL_NV_occlusion_query.csv:glDeleteOcclusionQueriesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_occlusion_query.csv:glDeleteOcclusionQueriesNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_occlusion_query.csv:glDeleteOcclusionQueriesNV,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_NV_transform_feedback2.csv:glDeleteTransformFeedbacksNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_transform_feedback2.csv:glDeleteTransformFeedbacksNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_transform_feedback2.csv:glDeleteTransformFeedbacksNV,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_NV_vertex_program.0001.csv:glDeleteProgramsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_NV_vertex_program.0001.csv:glDeleteProgramsNV,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_NV_vertex_program.0001.csv:glDeleteProgramsNV,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA
+GL_VERSION_1_1.0003.csv:glDeleteTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_1.0003.csv:glDeleteTextures,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_1.0003.csv:glDeleteTextures,1,1,"const GLuint *",textures,"arg0(n)",in,variable,NA
+GL_VERSION_1_5.0001.csv:glDeleteBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv:glDeleteBuffers,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv:glDeleteBuffers,1,1,"const GLuint *",buffers,"arg0(n)",in,variable,NA
+GL_VERSION_1_5.0001.csv:glDeleteQueries,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_1_5.0001.csv:glDeleteQueries,0,0,GLsizei,n,N/A,in,fixed,N/A
+GL_VERSION_1_5.0001.csv:glDeleteQueries,1,1,"const GLuint *",ids,"arg0(n)",in,variable,NA

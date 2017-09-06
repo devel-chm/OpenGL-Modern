@@ -1,0 +1,4 @@
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,0,0,GLuint,shader,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,1,0,GLenum,pname,N/A,in,fixed,N/A
+GL_VERSION_2_0.0002.csv,        glGetShaderiv,2,1,"GLint *",param,1,out,fixed,N/A

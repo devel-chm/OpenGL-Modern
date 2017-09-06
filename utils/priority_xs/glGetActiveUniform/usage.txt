@@ -1,0 +1,16 @@
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,0,0,GLuint,program,N/A,in,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,1,0,GLuint,index,N/A,in,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,2,0,GLsizei,maxLength,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_ACTIVE_UNIFORM_MAX_LENGTH,GLint *params) to determine"
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,3,1,"GLsizei *",length,N/A,out,fixed,"string length of arg6(name) not including NULL"
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,4,1,"GLint *",size,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,5,1,"GLenum *",type,N/A,out,fixed,N/A
+GL_VERSION_2_0.0001.csv,        glGetActiveUniform,6,1,"GLchar *",name,arg2(maxLength),out,variable,"name is a NULL terminated string"
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,-1,0,void,N/A,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,0,0,GLhandleARB,programObj,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,1,0,GLuint,index,N/A,in,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,2,0,GLsizei,maxLength,N/A,in,fixed,"glGetProgramiv(GLuint program,GL_ACTIVE_UNIFORM_MAX_LENGTH,GLint *params) to determine"
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,3,1,"GLsizei *",length,N/A,out,fixed,"string length of arg6(name) not including NULL"
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,4,1,"GLint *",size,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,5,1,"GLenum *",type,N/A,out,fixed,N/A
+GL_ARB_shader_objects.0001.csv, glGetActiveUniformARB,6,1,"GLcharARB *",name,arg2(maxLength),out,variable,"name is a NULL terminated string"
