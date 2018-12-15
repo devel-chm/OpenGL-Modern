@@ -68,7 +68,7 @@ SV*
 glewGetErrorString(err)
     GLenum err
 CODE:
-    RETVAL = newSVpv(glewGetErrorString(err),0);
+    RETVAL = newSVpv((const char *const)glewGetErrorString(err),0);
 OUTPUT:
     RETVAL
 
@@ -76,7 +76,7 @@ SV*
 glewGetString(what)
     GLenum what;
 CODE:
-    RETVAL = newSVpv(glewGetString(what),0);
+    RETVAL = newSVpv((const char *const)glewGetString(what),0);
 OUTPUT:
     RETVAL
 
@@ -84,7 +84,7 @@ SV*
 glGetString(what)
     GLenum what;
 CODE:
-    RETVAL = newSVpv(glGetString(what),0);
+    RETVAL = newSVpv((const char *const)glGetString(what),0);
 OUTPUT:
     RETVAL
 

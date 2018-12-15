@@ -324,7 +324,8 @@ XS
 CODE:
     if ( ! _done_glewInit ) {
         glewExperimental = GL_TRUE;
-        glewInit() || _done_glewInit++;
+        if (GLEW_OK == glewInit())
+           _done_glewInit++;
     }
 $error_check
 XS

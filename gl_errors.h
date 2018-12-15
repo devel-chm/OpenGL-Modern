@@ -24,7 +24,7 @@ const char* const gl_error_symbol_strings[] = {
 
 int is_gl_error(int rval) {
     int err;
-    err = rval & 0x0507 > 0 ? (rval & 0x07) + 1 : 0;
+    err = ( (rval & 0x0507) > 0 ) ? (rval & 0x07) + 1 : 0;
     return err;
 }
 
