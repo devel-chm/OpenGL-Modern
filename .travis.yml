@@ -1,3 +1,9 @@
+# This .travis.yml file is a basic working linux Travis-CI
+# file for build testing.  I've removed the OSX stuff as I
+# am unable to repair that myself.
+#
+# TODO: enable Travis-CI support for both OSX and Windows
+#
 language: perl
 perl:
    - "5.18"
